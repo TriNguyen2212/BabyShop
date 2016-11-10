@@ -1,0 +1,357 @@
+﻿.tagDetails {
+    list-style: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 100% !important;
+}
+
+    .tagDetails li {
+        float: left;
+    }
+
+.tagDetail {
+    background: #eee;
+    border-radius: 3px 0 0 3px;
+    color: #999;
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 20px 0 23px;
+    position: relative;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    -webkit-transition: color 0.2s;
+}
+
+    .tagDetail::before {
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+        content: '';
+        height: 6px;
+        left: 10px;
+        position: absolute;
+        width: 6px;
+        top: 10px;
+    }
+
+    .tagDetail::after {
+        background: #fff;
+        border-bottom: 13px solid transparent;
+        border-left: 10px solid #eee;
+        border-top: 13px solid transparent;
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .tagDetail:hover {
+        background-color: #ff590f;
+        color: white;
+    }
+
+        .tagDetail:hover::after {
+            border-left-color: #ff590f;
+        }
+
+a.tagDetail:hover {
+    color: white !important;
+}
+
+/*--contact--*/
+.form-checkout {
+    background: #fff;
+    background-size: cover;
+    padding: 1em 0;
+}
+
+.form-checkout-grid {
+    background-color: #999;
+    padding: 4em;
+}
+
+.form-checkout-info {
+    background-color: rgba(0, 166, 214, 0.7);
+    padding: 3em 4em;
+}
+
+    .form-checkout-info.form-checkout-mdl {
+        margin: 2em 0;
+    }
+
+.contact iframe {
+    width: 100%;
+    min-height: 400px;
+    border: none;
+}
+
+.form-checkout h4 {
+    font-size: 2.8em;
+    color: #808080;
+    margin-bottom: 0.7em;
+}
+
+.form-checkout-info h4 {
+    margin-bottom: .4em;
+}
+
+.form-checkout input[type="text"] {
+    width: 100%;
+    color: #000;
+    background: none;
+    outline: none;
+    font-size: 1em;
+    padding: .8em 1em;
+    margin-top: 2em;
+    border: solid 1px #ddd;
+    -webkit-appearance: none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.form-checkout textarea {
+    resize: none;
+    width: 100%;
+    background: none;
+    color: #000;
+    font-size: 1em;
+    margin-top: 2em;
+    outline: none;
+    padding: .6em 1em;
+    border: solid 1px #ddd;
+    min-height: 12.3em;
+    -webkit-appearance: none;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+}
+
+.form-checkout input[type="submit"] {
+    outline: none;
+    color: #fff;
+    padding: .8em 4em;
+    font-size: 1em;
+    margin: 1em 0 0 0;
+    -webkit-appearance: none;
+    background: #FF590F;
+    border: solid 1px #FF590F;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+
+    .form-checkout input[type="submit"]:hover {
+        background: none;
+        color: #FF590F;
+    }
+
+.form-checkout p {
+    color: #000;
+    margin: 0;
+    font-size: 1em;
+    line-height: 1.8em;
+    letter-spacing: 1px;
+}
+
+    .form-checkout p a {
+        color: #000;
+        -webkit-transition: .5s all;
+        transition: .5s all;
+        -moz-transition: .5s all;
+    }
+
+        .form-checkout p a:hover {
+            color: #000;
+        }
+/*--//contact--*/
+.error {
+    color: red;
+}
+
+ul.bankList {
+    clear: both;
+}
+
+    ul.bankList li {
+        list-style-position: outside;
+        list-style-type: none;
+        cursor: pointer;
+        float: left;
+        margin-right: 0;
+        padding: 5px 2px;
+        text-align: center;
+        width: 90px;
+    }
+
+.list-content li {
+    list-style: none outside none;
+    margin: 0 0 10px;
+}
+
+    .list-content li .boxContent {
+        display: none;
+        width: 636px;
+        border: 1px solid #cccccc;
+        padding: 10px;
+    }
+
+    .list-content li.active .boxContent {
+        display: block;
+    }
+
+    .list-content li .boxContent ul {
+        height: 280px;
+    }
+
+i.VISA, i.MASTE, i.AMREX, i.JCB, i.VCB, i.TCB, i.MB, i.VIB, i.ICB, i.EXB, i.ACB, i.HDB, i.MSB, i.NVB, i.DAB, i.SHB, i.OJB, i.SEA, i.TPB, i.PGB, i.BIDV, i.AGB, i.SCB, i.VPB, i.VAB, i.GPB, i.SGB, i.NAB, i.BAB {
+    width: 80px;
+    height: 30px;
+    display: block;
+    background: url(../images/bank_logo.png) no-repeat;
+}
+
+i.MASTE {
+    background-position: 0px -31px;
+}
+
+i.AMREX {
+    background-position: 0px -62px;
+}
+
+i.JCB {
+    background-position: 0px -93px;
+}
+
+i.VCB {
+    background-position: 0px -124px;
+}
+
+i.TCB {
+    background-position: 0px -155px;
+}
+
+i.MB {
+    background-position: 0px -186px;
+}
+
+i.VIB {
+    background-position: 0px -217px;
+}
+
+i.ICB {
+    background-position: 0px -248px;
+}
+
+i.EXB {
+    background-position: 0px -279px;
+}
+
+i.ACB {
+    background-position: 0px -310px;
+}
+
+i.HDB {
+    background-position: 0px -341px;
+}
+
+i.MSB {
+    background-position: 0px -372px;
+}
+
+i.NVB {
+    background-position: 0px -403px;
+}
+
+i.DAB {
+    background-position: 0px -434px;
+}
+
+i.SHB {
+    background-position: 0px -465px;
+}
+
+i.OJB {
+    background-position: 0px -496px;
+}
+
+i.SEA {
+    background-position: 0px -527px;
+}
+
+i.TPB {
+    background-position: 0px -558px;
+}
+
+i.PGB {
+    background-position: 0px -589px;
+}
+
+i.BIDV {
+    background-position: 0px -620px;
+}
+
+i.AGB {
+    background-position: 0px -651px;
+}
+
+i.SCB {
+    background-position: 0px -682px;
+}
+
+i.VPB {
+    background-position: 0px -713px;
+}
+
+i.VAB {
+    background-position: 0px -744px;
+}
+
+i.GPB {
+    background-position: 0px -775px;
+}
+
+i.SGB {
+    background-position: 0px -806px;
+}
+
+i.NAB {
+    background-position: 0px -837px;
+}
+
+i.BAB {
+    background-position: 0px -868px;
+}
+
+ul.cardList li {
+    cursor: pointer;
+    float: left;
+    margin-right: 0;
+    padding: 5px 4px;
+    text-align: center;
+    width: 90px;
+}
+
+.divOptionPayment {
+    margin-top: 20px;
+}
+
+    .divOptionPayment label {
+        margin-right: 20px;
+        cursor: pointer;
+    }
+
+.boxContent {
+    border: 1px solid rgb(221, 221, 221);
+    padding: 5px;
+    margin-top: 10px;
+}

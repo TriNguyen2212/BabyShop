@@ -1,0 +1,10 @@
+D:\TAI_LIEU_HOC_TAP\Du_An\OnlineShop\OnlineShop.Common\bin\Debug\OnlineShop.Common.dll
+D:\TAI_LIEU_HOC_TAP\Du_An\OnlineShop\OnlineShop.Common\bin\Debug\OnlineShop.Common.pdb
+D:\TAI_LIEU_HOC_TAP\Du_An\OnlineShop\OnlineShop.Common\obj\Debug\OnlineShop.Common.csprojResolveAssemblyReference.cache
+D:\TAI_LIEU_HOC_TAP\Du_An\OnlineShop\OnlineShop.Common\obj\Debug\OnlineShop.Common.dll
+D:\TAI_LIEU_HOC_TAP\Du_An\OnlineShop\OnlineShop.Common\obj\Debug\OnlineShop.Common.pdb
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\OnlineShop\OnlineShop.Common\bin\Debug\OnlineShop.Common.dll
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\OnlineShop\OnlineShop.Common\bin\Debug\OnlineShop.Common.pdb
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\OnlineShop\OnlineShop.Common\obj\Debug\OnlineShop.Common.csprojResolveAssemblyReference.cache
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\OnlineShop\OnlineShop.Common\obj\Debug\OnlineShop.Common.dll
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\OnlineShop\OnlineShop.Common\obj\Debug\OnlineShop.Common.pdb

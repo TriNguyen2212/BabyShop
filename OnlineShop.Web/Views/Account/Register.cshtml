@@ -1,0 +1,76 @@
+﻿@model BabyShop.Web.Models.RegisterViewModel
+@using BotDetect.Web.Mvc;
+@{
+    ViewBag.Title = "đăng nhập";
+    Layout = "~/Views/Shared/Layouts.cshtml";
+}
+
+@section    footerJS{
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            var defaults = {
+                containerID: 'toTop', // fading element id
+                containerHoverID: 'toTopHover', // fading element hover id
+                scrollSpeed: 1200,
+                easingType: 'linear'
+            };
+
+            $().UItoTop({ easingType: 'easeOutQuart' });
+
+        });
+    </script>
+}
+
+<link href="@BotDetect.Web.CaptchaUrls.Absolute.LayoutStyleSheetUrl" rel="stylesheet" type="text/css" />
+<!--breadcrumbs-->
+<div class="breadcrumbs">
+    <div class="container">
+        <ol class="breadcrumb breadcrumb1 animated wow slideInLeft" data-wow-delay=".5s">
+            <li><a href="/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Trang chủ</a></li>
+            <li class="active">Đăng ký</li>
+        </ol>
+    </div>
+</div>
+<!--//breadcrumbs-->
+<!--login-->
+<div class="login-page">
+    <div class="title-info wow fadeInUp animated" data-wow-delay=".5s">
+        <h3 class="title">Đăng ký khách hàng thành viên</h3>
+        <p> đăng ký khách hàng thành viên sẽ nhận được nhiều ưu đã về giá và khuyến mãi </p>
+    </div>
+    <div class="widget-shadow">
+        <div class="login-top wow fadeInUp animated" data-wow-delay=".7s">
+            <h4>Quý khách đã có tài khoản ?<a href="dang-nhap.html">  Đăng nhập »</a> </h4>
+        </div>
+        <div class="login-body">
+            @using (Html.BeginForm("Register", "Account", FormMethod.Post))
+            {
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary(false,"",new { @class="error"})
+                if (ViewData["SuccessMsg"] != null)
+                {
+                    <div class="alert alert-success" role="alert">
+                        <strong>Chúc mừng bạn! </strong> đã đăng ký thành công.
+                        <br />Vui lòng click <a href="/dang-nhap.html">vào đây </a>để đăng nhập.
+                    </div>
+                }
+
+                @Html.TextBoxFor(Model => Model.FullName, new { @placeholder = "Họ và tên" })
+                @Html.TextBoxFor(Model => Model.PhoneNumber, new { @class = "email", @placeholder = "Số điện thoại" })
+                @Html.TextBoxFor(Model => Model.Email, new { @name = "password", @class = "email", @placeholder = "Email" })
+                @Html.TextBoxFor(Model => Model.Password, new { @type = "password", @name = "password", @class = "lock", @placeholder = "Mật khẩu" })
+                <input type="password" name="repassword" class="lock" placeholder="Nhập lại mật khẩu">
+
+                MvcCaptcha registerCaptcha = new MvcCaptcha("registerCaptcha");
+                @Html.Captcha(registerCaptcha)
+                @Html.TextBox("CaptchaCode")
+
+                <input type="submit" name="Register" value="Đăng ký">
+            }
+            @*<form class="wow fadeInUp animated" data-wow-delay=".7s">
+                </form>*@
+        </div>
+    </div>
+</div>
+<!--//login-->

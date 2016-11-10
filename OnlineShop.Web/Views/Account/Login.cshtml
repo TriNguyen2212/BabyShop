@@ -1,0 +1,71 @@
+﻿@model BabyShop.Web.Models.LoginViewModel
+@{
+    ViewBag.Title = "đăng nhập";
+    Layout = "~/Views/Shared/Layouts.cshtml";
+}
+
+@section    footerJS{
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            var defaults = {
+                containerID: 'toTop', // fading element id
+                containerHoverID: 'toTopHover', // fading element hover id
+                scrollSpeed: 1200,
+                easingType: 'linear'
+            };
+
+            $().UItoTop({ easingType: 'easeOutQuart' });
+
+        });
+    </script>
+}
+
+<!--breadcrumbs-->
+<div class="breadcrumbs">
+    <div class="container">
+        <ol class="breadcrumb breadcrumb1 animated wow fadeInUp" data-wow-delay=".5s">
+            <li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Trang chủ</a></li>
+            <li class="active">Đăng nhập</li>
+        </ol>
+    </div>
+</div>
+<!--//breadcrumbs-->
+<!--login-->
+<div class="login-page">
+    <div class="title-info wow fadeInUp animated" data-wow-delay=".5s">
+        <h3 class="title">Đăng  nhập</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit curabitur </p>
+    </div>
+    <div class="widget-shadow">
+        <div class="login-top wow fadeInUp animated" data-wow-delay=".7s">
+            <h4>Chào mừng bạn đến với shop ! <br> Nếu Quý khách chưa có tài khoản? <a href="dang-ky.html">  Đăng ký »</a> </h4>
+        </div>
+        <div class="login-body wow fadeInUp animated" data-wow-delay=".7s">
+            @using (Html.BeginForm("Login", "Account", new { returnUrl = @ViewBag.ReturnUrl }, FormMethod.Post))
+            {
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary(false, "", new { @class = "error" })
+
+                @Html.TextBoxFor(Model => Model.UserName, new { @class = "user", @name = "email", @placeholder = "Nhập Email" })
+                @Html.PasswordFor(Model => Model.Password, new { @class = "clock", @name = "password", @placeholder = "Nhập mật khẩu" })
+                <div class="forgot-grid">
+                    <label class="checkbox">
+                        @Html.CheckBoxFor(Model => Model.RememberMe)
+                        <i></i>Remember me
+                    </label>
+                    <div class="forgot">
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <input type="submit" name="Sign In" value="Đăng nhập">
+            }
+        </div>
+    </div>
+    <div class="login-page-bottom">
+        <h5> - Hoặc -</h5>
+        @Html.Partial("_ExternalLoginsListPartial", new BabyShop.Web.Models.ExternalLoginListViewModel { ReturnUrl = ViewBag.ReturnUrl })
+    </div>
+</div>
+<!--//login-->

@@ -1,0 +1,40 @@
+D:\TAI_LIEU_HOC_TAP\Du_An\OnlineShop\OnlineShop.Service\bin\Debug\OnlineShop.Service.dll.config
+D:\TAI_LIEU_HOC_TAP\Du_An\OnlineShop\OnlineShop.Service\bin\Debug\OnlineShop.Service.dll
+D:\TAI_LIEU_HOC_TAP\Du_An\OnlineShop\OnlineShop.Service\bin\Debug\OnlineShop.Service.pdb
+D:\TAI_LIEU_HOC_TAP\Du_An\OnlineShop\OnlineShop.Service\bin\Debug\EntityFramework.dll
+D:\TAI_LIEU_HOC_TAP\Du_An\OnlineShop\OnlineShop.Service\bin\Debug\EntityFramework.SqlServer.dll
+D:\TAI_LIEU_HOC_TAP\Du_An\OnlineShop\OnlineShop.Service\bin\Debug\EntityFramework.xml
+D:\TAI_LIEU_HOC_TAP\Du_An\OnlineShop\OnlineShop.Service\bin\Debug\EntityFramework.SqlServer.xml
+D:\TAI_LIEU_HOC_TAP\Du_An\OnlineShop\OnlineShop.Service\obj\Debug\OnlineShop.Service.csprojResolveAssemblyReference.cache
+D:\TAI_LIEU_HOC_TAP\Du_An\OnlineShop\OnlineShop.Service\obj\Debug\OnlineShop.Service.dll
+D:\TAI_LIEU_HOC_TAP\Du_An\OnlineShop\OnlineShop.Service\obj\Debug\OnlineShop.Service.pdb
+D:\TAI_LIEU_HOC_TAP\Du_An\OnlineShop\OnlineShop.Service\bin\Debug\OnlineShop.Model.dll
+D:\TAI_LIEU_HOC_TAP\Du_An\OnlineShop\OnlineShop.Service\bin\Debug\OnlineShop.Model.pdb
+D:\TAI_LIEU_HOC_TAP\Du_An\OnlineShop\OnlineShop.Service\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\TAI_LIEU_HOC_TAP\Du_An\OnlineShop\OnlineShop.Service\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\TAI_LIEU_HOC_TAP\Du_An\OnlineShop\OnlineShop.Service\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\TAI_LIEU_HOC_TAP\Du_An\OnlineShop\OnlineShop.Service\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\TAI_LIEU_HOC_TAP\Du_An\OnlineShop\OnlineShop.Service\bin\Debug\OnlineShop.Common.dll
+D:\TAI_LIEU_HOC_TAP\Du_An\OnlineShop\OnlineShop.Service\bin\Debug\OnlineShop.Data.dll
+D:\TAI_LIEU_HOC_TAP\Du_An\OnlineShop\OnlineShop.Service\bin\Debug\OnlineShop.Common.pdb
+D:\TAI_LIEU_HOC_TAP\Du_An\OnlineShop\OnlineShop.Service\bin\Debug\OnlineShop.Data.pdb
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\OnlineShop\OnlineShop.Service\bin\Debug\OnlineShop.Service.dll.config
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\OnlineShop\OnlineShop.Service\bin\Debug\OnlineShop.Service.dll
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\OnlineShop\OnlineShop.Service\bin\Debug\OnlineShop.Service.pdb
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\OnlineShop\OnlineShop.Service\bin\Debug\EntityFramework.dll
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\OnlineShop\OnlineShop.Service\bin\Debug\EntityFramework.SqlServer.dll
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\OnlineShop\OnlineShop.Service\bin\Debug\OnlineShop.Common.dll
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\OnlineShop\OnlineShop.Service\bin\Debug\OnlineShop.Data.dll
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\OnlineShop\OnlineShop.Service\bin\Debug\OnlineShop.Model.dll
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\OnlineShop\OnlineShop.Service\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\OnlineShop\OnlineShop.Service\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\OnlineShop\OnlineShop.Service\bin\Debug\OnlineShop.Common.pdb
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\OnlineShop\OnlineShop.Service\bin\Debug\OnlineShop.Data.pdb
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\OnlineShop\OnlineShop.Service\bin\Debug\OnlineShop.Model.pdb
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\OnlineShop\OnlineShop.Service\bin\Debug\EntityFramework.xml
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\OnlineShop\OnlineShop.Service\bin\Debug\EntityFramework.SqlServer.xml
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\OnlineShop\OnlineShop.Service\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\OnlineShop\OnlineShop.Service\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\OnlineShop\OnlineShop.Service\obj\Debug\OnlineShop.Service.csprojResolveAssemblyReference.cache
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\OnlineShop\OnlineShop.Service\obj\Debug\OnlineShop.Service.dll
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\OnlineShop\OnlineShop.Service\obj\Debug\OnlineShop.Service.pdb

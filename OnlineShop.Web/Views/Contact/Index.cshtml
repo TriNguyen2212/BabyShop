@@ -1,0 +1,128 @@
+﻿@model BabyShop.Web.Models.FeedbackViewModel
+@using BotDetect.Web.Mvc;
+
+@{
+    ViewBag.Title = "Liên hệ";
+    Layout = "~/Views/Shared/Layouts.cshtml";
+    ViewBag.Title = "Liên hệ";
+    ViewBag.MetaKeyword = "liên hệ";
+    ViewBag.MetaDescription = "Thông tin liên hệ của Baby SHOP";
+}
+
+@section    footerJS{
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDiFl_0KQLeyqArX7jtCMFIihDfiK8MODQ"></script>
+    <script src="~/Assets/client/js/controllers/contact.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            var defaults = {
+                containerID: 'toTop', // fading element id
+                containerHoverID: 'toTopHover', // fading element hover id
+                scrollSpeed: 1200,
+                easingType: 'linear'
+            };
+
+            $().UItoTop({ easingType: 'easeOutQuart' });
+
+            $('#btnContactClick').off('click').on('click', function () {
+                var isValid = $('#frmContact').valid();
+                if (isValid) {
+                    $('#frmContact').submit();
+                }
+            });
+            $('#frmContact').validate({
+                rules: {
+                    Name: "required",
+                    Email: {
+                        required: true,
+                        email: true
+                    },
+                    Message: {
+                        required: true
+                    }
+                },
+                messages: {
+                    Name: "Yêu cầu nhập tên",
+                    Email: {
+                        required: "Bạn cần nhập email",
+                        email: "Định dạng email chưa đúng"
+                    },
+                    Message: "Yêu cầu nhập nội dung",
+                }
+            });
+        });
+    </script>
+}
+<link href="@BotDetect.Web.CaptchaUrls.Absolute.LayoutStyleSheetUrl" rel="stylesheet" type="text/css" />
+<!--breadcrumbs-->
+<div class="breadcrumbs">
+    <div class="container">
+        <ol class="breadcrumb breadcrumb1 animated wow slideInLeft" data-wow-delay=".5s">
+            <li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Trang chủ</a></li>
+            <li class="active">Liên hệ</li>
+        </ol>
+    </div>
+</div>
+<!--//breadcrumbs-->
+<!--contact-->
+<input type="hidden" id="hidAddress" value="@Model.ContactDetail.Name<br />Điện thoại:@Model.ContactDetail.Phone <br>Địa chỉ: @Model.ContactDetail.Address" />
+<input type="hidden" id="hidLat" value="@Model.ContactDetail.Lat" />
+<input type="hidden" id="hidLng" value="@Model.ContactDetail.Lng" />
+<input type="hidden" id="hidName" value="@Model.ContactDetail.Name" />
+<div class="contact">
+    <div class="container">
+        <div class="title-info wow fadeInUp animated" data-wow-delay=".5s">
+            <h3 class="title">Địa chỉ đường đến <span> Baby shop!</span></h3>
+            <p></p>
+        </div>
+        @*<iframe class="wow zoomIn animated animated" data-wow-delay=".5s" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57537.641430789925!2d-74.03215321337959!3d40.719122105634035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sin!4v1456152197129" allowfullscreen=""></iframe>*@
+        <div id="map"></div>
+    </div>
+</div>
+<div class="address">
+    <!--address-->
+    <div class="container">
+        <div class="address-row">
+            <div class="col-md-6 address-left wow fadeInLeft animated" data-wow-delay=".5s">
+                <div class="address-grid">
+                    <h4 class="wow fadeIndown animated" data-wow-delay=".5s">Phản hồi đến Baby Shop </h4>
+                    @using (Html.BeginForm("SendFeedback", "Contact", FormMethod.Post, new { @id = "frmContact" }))
+                    {
+                        if (ViewData["SuccessMsg"] != null)
+                        {
+                            <div class="alert alert-success" role="alert">
+                                <strong>Chúc mừng bạn! </strong> gửi phản hồi thành công.
+                                <br />Chúng tôi sẽ liên hệ lại sớm nhất có thể.
+                            </div>
+                        }
+                        @Html.ValidationSummary(false, "", new { @class = "error" });
+                        @Html.TextBoxFor(model => model.Name, new { @class = "textbox wow fadeIndown animated", @placeholder = "Nhập tên" });
+                        @Html.TextBoxFor(model => model.Email, new { @class = "textbox wow fadeIndown animated", @placeholder = "Nhập email" });
+                        @Html.TextAreaFor(model => model.Message, new { @class = "textbox wow fadeIndown animated", @placeholder = "Nội dung" });
+
+                        MvcCaptcha contactCaptcha = new MvcCaptcha("contactCaptcha");
+                        @Html.Captcha(contactCaptcha)
+                        @Html.TextBox("CaptchaCode", "", new { @style = "margin-top:0px;margin-bottom: 10px;", @placeholder = "Nhập mã nhìn thấy bên trên" })
+                        <input class="wow fadeIndown animated btn btn-default" data-wow-delay=".9s" type="button" id="btnContactClick" value="Gửi đi">
+                    }
+                </div>
+            </div>
+            <div class="col-md-6 address-right">
+                <div class="address-info wow fadeInRight animated" data-wow-delay=".5s">
+                    <h4>Địa chỉ</h4>
+                    <p>@Model.ContactDetail.Address</p>
+                </div>
+                <div class="address-info address-mdl wow fadeInRight animated" data-wow-delay=".7s">
+                    <h4>Điện thoại </h4>
+                    <p>@Model.ContactDetail.Phone</p>
+                </div>
+                <div class="address-info wow fadeInRight animated" data-wow-delay=".6s">
+                    <h4>MAIL</h4>
+                    <p><a href="@Model.ContactDetail.Email">@Model.ContactDetail.Email</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--//contact-->	

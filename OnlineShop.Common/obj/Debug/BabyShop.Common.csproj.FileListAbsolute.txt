@@ -1,0 +1,5 @@
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\BabyShop\OnlineShop.Common\bin\Debug\BabyShop.Common.dll
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\BabyShop\OnlineShop.Common\bin\Debug\BabyShop.Common.pdb
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\BabyShop\OnlineShop.Common\obj\Debug\BabyShop.Common.dll
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\BabyShop\OnlineShop.Common\obj\Debug\BabyShop.Common.pdb
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\BabyShop\OnlineShop.Common\obj\Debug\BabyShop.Common.csprojResolveAssemblyReference.cache

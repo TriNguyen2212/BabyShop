@@ -1,0 +1,54 @@
+D:\TAI_LIEU_HOC_TAP\Du_An\OnlineShop\OnlineShop.Model\bin\Debug\OnlineShop.Model.dll.config
+D:\TAI_LIEU_HOC_TAP\Du_An\OnlineShop\OnlineShop.Model\bin\Debug\OnlineShop.Model.dll
+D:\TAI_LIEU_HOC_TAP\Du_An\OnlineShop\OnlineShop.Model\bin\Debug\OnlineShop.Model.pdb
+D:\TAI_LIEU_HOC_TAP\Du_An\OnlineShop\OnlineShop.Model\bin\Debug\EntityFramework.dll
+D:\TAI_LIEU_HOC_TAP\Du_An\OnlineShop\OnlineShop.Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\TAI_LIEU_HOC_TAP\Du_An\OnlineShop\OnlineShop.Model\bin\Debug\EntityFramework.xml
+D:\TAI_LIEU_HOC_TAP\Du_An\OnlineShop\OnlineShop.Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\TAI_LIEU_HOC_TAP\Du_An\OnlineShop\OnlineShop.Model\obj\Debug\OnlineShop.Model.csprojResolveAssemblyReference.cache
+D:\TAI_LIEU_HOC_TAP\Du_An\OnlineShop\OnlineShop.Model\obj\Debug\OnlineShop.Model.dll
+D:\TAI_LIEU_HOC_TAP\Du_An\OnlineShop\OnlineShop.Model\obj\Debug\OnlineShop.Model.pdb
+D:\TAI_LIEU_HOC_TAP\Du_An\OnlineShop\OnlineShop.Model\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\TAI_LIEU_HOC_TAP\Du_An\OnlineShop\OnlineShop.Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\TAI_LIEU_HOC_TAP\Du_An\OnlineShop\OnlineShop.Model\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+D:\TAI_LIEU_HOC_TAP\Du_An\OnlineShop\OnlineShop.Model\bin\Debug\Microsoft.Owin.dll
+D:\TAI_LIEU_HOC_TAP\Du_An\OnlineShop\OnlineShop.Model\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+D:\TAI_LIEU_HOC_TAP\Du_An\OnlineShop\OnlineShop.Model\bin\Debug\Microsoft.Owin.Security.dll
+D:\TAI_LIEU_HOC_TAP\Du_An\OnlineShop\OnlineShop.Model\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+D:\TAI_LIEU_HOC_TAP\Du_An\OnlineShop\OnlineShop.Model\bin\Debug\Newtonsoft.Json.dll
+D:\TAI_LIEU_HOC_TAP\Du_An\OnlineShop\OnlineShop.Model\bin\Debug\Owin.dll
+D:\TAI_LIEU_HOC_TAP\Du_An\OnlineShop\OnlineShop.Model\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\TAI_LIEU_HOC_TAP\Du_An\OnlineShop\OnlineShop.Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\TAI_LIEU_HOC_TAP\Du_An\OnlineShop\OnlineShop.Model\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+D:\TAI_LIEU_HOC_TAP\Du_An\OnlineShop\OnlineShop.Model\bin\Debug\Microsoft.Owin.xml
+D:\TAI_LIEU_HOC_TAP\Du_An\OnlineShop\OnlineShop.Model\bin\Debug\Microsoft.Owin.Security.xml
+D:\TAI_LIEU_HOC_TAP\Du_An\OnlineShop\OnlineShop.Model\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+D:\TAI_LIEU_HOC_TAP\Du_An\OnlineShop\OnlineShop.Model\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+D:\TAI_LIEU_HOC_TAP\Du_An\OnlineShop\OnlineShop.Model\bin\Debug\Newtonsoft.Json.xml
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\OnlineShop\OnlineShop.Model\bin\Debug\OnlineShop.Model.dll.config
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\OnlineShop\OnlineShop.Model\bin\Debug\OnlineShop.Model.dll
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\OnlineShop\OnlineShop.Model\bin\Debug\OnlineShop.Model.pdb
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\OnlineShop\OnlineShop.Model\bin\Debug\EntityFramework.dll
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\OnlineShop\OnlineShop.Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\OnlineShop\OnlineShop.Model\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\OnlineShop\OnlineShop.Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\OnlineShop\OnlineShop.Model\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\OnlineShop\OnlineShop.Model\bin\Debug\Microsoft.Owin.dll
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\OnlineShop\OnlineShop.Model\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\OnlineShop\OnlineShop.Model\bin\Debug\Microsoft.Owin.Security.dll
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\OnlineShop\OnlineShop.Model\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\OnlineShop\OnlineShop.Model\bin\Debug\Newtonsoft.Json.dll
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\OnlineShop\OnlineShop.Model\bin\Debug\Owin.dll
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\OnlineShop\OnlineShop.Model\bin\Debug\EntityFramework.xml
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\OnlineShop\OnlineShop.Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\OnlineShop\OnlineShop.Model\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\OnlineShop\OnlineShop.Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\OnlineShop\OnlineShop.Model\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\OnlineShop\OnlineShop.Model\bin\Debug\Microsoft.Owin.xml
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\OnlineShop\OnlineShop.Model\bin\Debug\Microsoft.Owin.Security.xml
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\OnlineShop\OnlineShop.Model\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\OnlineShop\OnlineShop.Model\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\OnlineShop\OnlineShop.Model\bin\Debug\Newtonsoft.Json.xml
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\OnlineShop\OnlineShop.Model\obj\Debug\OnlineShop.Model.csprojResolveAssemblyReference.cache
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\OnlineShop\OnlineShop.Model\obj\Debug\OnlineShop.Model.dll
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\OnlineShop\OnlineShop.Model\obj\Debug\OnlineShop.Model.pdb
