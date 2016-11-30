@@ -5,7 +5,6 @@
     </h1>
     <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Trang chủ</a></li>
-        <li><a href="#">Sản phẩm</a></li>
         <li><a ui-sref="product_categories">Danh mục</a></li>
         <li class="active">Cập nhật</li>
     </ol>
@@ -14,9 +13,6 @@
 <section class="content">
     <!-- Default box -->
     <div class="box box-info">
-        <div class="box-header with-border">
-            <h3 class="box-title">{{productCategory.Name}}</h3>
-        </div>
         <!-- /.box-header -->
         <!-- form start -->
         <form class="form-horizontal" novalidate name="frmUpdateProductCategory" role="form" ng-submit="UpdateProductCategory()">
@@ -67,21 +63,18 @@
                         <span ng-show="frmUpdateProductCategory.image.$error.maxlength" class="has-error">Hình ảnh chỉ được 256 ký tự</span>
                     </div>
                 </div>
-
                 <div class="form-group">
                     <label for="inputPassword3" class="col-sm-2 control-label">Meta Keyword</label>
                     <div class="col-sm-10">
                         <textarea class="form-control" name="metakeyword" ng-model="productCategory.MetaKeyword"></textarea>
                     </div>
                 </div>
-
                 <div class="form-group">
                     <label for="inputPassword3" class="col-sm-2 control-label">Meta Description</label>
                     <div class="col-sm-10">
                         <textarea class="form-control" name="metadescription" ng-model="productCategory.MetaDescription"></textarea>
                     </div>
                 </div>
-
                 <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-10">
                         <div class="checkbox">

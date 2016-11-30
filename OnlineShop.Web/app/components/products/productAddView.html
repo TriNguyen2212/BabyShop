@@ -5,143 +5,146 @@
     </h1>
     <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Trang chủ</a></li>
-        <li><a href="#">Sản phẩm</a></li>
-        <li><a ui-sref="product_categories">Danh sách</a></li>
+        <li><a ui-sref="products">Danh sách sản phẩm</a></li>
         <li class="active">Thêm  mới</li>
     </ol>
 </section>
-<!-- Main content -->
 <section class="content">
-    <!-- Default box -->
-    <div class="box box-info">
-        <div class="box-header with-border">
-            <h3 class="box-title">Thêm mới</h3>
-        </div>
-        <!-- /.box-header -->
-        <!-- form start -->
-        <form class="form-horizontal" novalidate name="frmAddProduct" role="form" ng-submit="AddProduct()">
-            <div class="box-body">
-                <!-- Custom Tabs -->
-                <tabs>
-                    <pane title="Thông tin chung">
-                        <div class="margin-top-20">
+    <form class="form-horizontal" novalidate name="frmAddProduct" role="form" ng-submit="AddProduct()">
+        <div class="row">
+            <!-- column 1 -->
+            <div class="col-md-4">
+                <!-- general form elements -->
+                <div class="box box-primary">
+                    <div class="box-header with-border">
+                        <div class="box-body">
                             <div class="form-group" ng-class="{ 'has-error' : frmAddProduct.name.$invalid && !frmAddProduct.name.$pristine }">
-                                <label for="inputEmail3" class="col-sm-2 control-label">Tên sản phẩm</label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control" required ng-maxlength="256" name="name" ng-model="product.Name" ng-change="GetSeoTitle()">
+                                <label for="txtProductName">Tên sản phẩm</label>
+                                <div>
+                                    <input id="txtProductName" type="text" placeholder="Nhập tên sản phẩm" class="form-control" required ng-maxlength="256" name="name" ng-model="product.Name" ng-change="GetSeoTitle()">
                                     <span ng-show="frmAddProduct.name.$error.maxlength" class="has-error">Tên sản phẩm chỉ được 256 ký tự</span>
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <label for="inputPassword3" class="col-sm-2 control-label">Danh mục</label>
-                                <div class="col-sm-10" ng-class="{ 'has-error' : frmAddProduct.CategoryID.$invalid && !frmAddProduct.CategoryID.$pristine }">
+                            <div class="form-group" ng-class="{ 'has-error' : frmAddProduct.parentid.$invalid && !frmAddProduct.parentid.$pristine }">
+                                <label for="inputPassword3" class="control-label">Danh mục</label>
+                                <div>
                                     <select class="form-control" name="parentid" required ng-model="product.CategoryID" ng-options="option.ID as option.Name for option in productCategories">
-                                        <option value="">Chọn danh mục</option>
+                                        <option value="">[Chọn danh mục]</option>
                                     </select>
                                     <input type="hidden" name="parentId" ng-model="product.CategoryID" />
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="inputPassword3" class="col-sm-2 control-label">Bảo hành</label>
-                                <div class="col-sm-10">
-                                    <input type="number" class="form-control" name="warranty" ng-model="product.Warranty">(tháng)
+                                <label for="inputPassword3" class="control-label">Bảo hành </label> (tháng)
+                                <div>
+                                    <input type="number" placeholder="Nhập tháng bảo hành" class="form-control" name="warranty" ng-model="product.Warranty">
                                 </div>
                             </div>
-                            <div class="form-group" ng-class="{ 'has-error' : frmAddProduct.CategoryID.$invalid && !frmAddProduct.CategoryID.$pristine }">
-                                <label for="inputPassword3" class="col-sm-2 control-label">Giá</label>
-                                <div class="col-sm-10">
-                                    <input type="number" class="form-control" name="price" required ng-model="product.Price">
-                                    <label class="has-error" ng-show="frmAddProduct.price.$invalid">Phải nhập giá</label>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="inputPassword3" class="col-sm-2 control-label">Giá KM</label>
-                                <div class="col-sm-10">
-                                    <input type="number" class="form-control" name="promotionprice" ng-model="product.PromotionPrice">
+                            <div class="form-group" ng-class="{ 'has-error' : frmAddProduct.price.$invalid && !frmAddProduct.price.$pristine }">
+                                <label for="inputPassword3" class="control-label">Giá</label>
+                                <div>
+                                    <input type="number" placeholder="Nhập giá tiền" class="form-control" name="price" required ng-model="product.Price">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="inputPassword3" class="col-sm-2 control-label">Tags</label>
-                                <div class="col-sm-10">
+                                <label for="inputPassword3" class="control-label">Giá khuyến mãi</label>
+                                <div>
+                                    <input type="number" placeholder="Nhập giá khuyến mãi nếu có" class="form-control" name="promotionprice" ng-model="product.PromotionPrice">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPassword3" class="control-label">Tags</label>
+                                <div>
                                     <tags-input ng-model="product.Tags" name="tags"></tags-input>
                                 </div>
                             </div>
-
                             <div class="form-group">
-                                <div class="col-sm-offset-2 col-sm-10">
-                                    <div class="checkbox">
-                                        <label>
-                                            <input type="checkbox" name="status" ng-model="product.Status" ng-checked="product.Status"> Kích hoạt
-                                        </label>
-                                    </div>
-                                    <div class="checkbox">
-                                        <label>
-                                            <input type="checkbox" name="homeFlag" ng-model="product.HomeFlag" ng-checked="product.HomeFlag"> Hiển thị trang chủ
-                                        </label>
-                                    </div>
-                                    <div class="checkbox">
-                                        <label>
-                                            <input type="checkbox" name="hotFlag" ng-model="product.HotFlag" ng-checked="product.HotFlag"> SP Hot
-                                        </label>
-                                    </div>
+                                <label>
+                                    <input class="minimal" type="checkbox" name="status" ng-model="product.Status" ng-checked="product.Status"> Kích hoạt
+                                </label>
+                                <label style="padding-left: 10px;">
+                                    <input class="minimal" type="checkbox" name="homeFlag" ng-model="product.HomeFlag" ng-checked="product.HomeFlag"> Hiển thị trang chủ
+                                </label>
+                                <label style="padding-left: 10px;">
+                                    <input class="minimal" type="checkbox" name="hotFlag" ng-model="product.HotFlag" ng-checked="product.HotFlag"> Sản phẩm Hot
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.box-header -->
+                    <!-- form start -->
+                </div>
+                <!-- /.box -->
+            </div>
+            <!--/.col (column 1) -->
+            <!-- column 2 -->
+            <div class="col-md-4">
+                <!-- general form elements -->
+                <div class="box box-success">
+                    <div class="box-header with-border">
+                        <div class="box-body">
+                            <!--<div class="form-group">
+                                <label>Màu sắc</label>
+                                    <select ui-select2 ng-model="select2" data-placeholder="Pick a number" style="width:100%" multiple="true">
+                                    <option></option>
+                                    <option ng-repeat="color in colors" value="{{color.ColorID}}">{{color.Name}}</option>
+                                </select>
+                            </div>-->
+                            <div class="form-group">
+                                <!--<label>test 1</label>
+                                <div width="100%" ng-dropdown-multiselect="" options="example13data" selected-model="example13model" extra-settings="example13settings">
+                                </div>-->
+                                <label for="inputPassword3" class="control-label">Mô tả ngắn</label> <span ng-show="frmAddProduct.description.$error.maxlength" class="has-error"> (Mô tả chỉ được 500 ký tự)</span>
+                                <div>
+                                    <input type="text" placeholder="Nhập mô tả ngắn về sản phẩm" class="form-control" name="description" ng-maxlength="500" ng-model="product.Description">
+                                </div>
+                                <label for="inputPassword3" class="control-label">Mô tả sản phẩm</label>
+                                <div>
+                                    <textarea class="form-control" placeholder="Nhập mô tả đầy đủ thông tin sản phẩm" name="content" ckeditor="ckeditorOptions" ng-model="product.Content"></textarea>
                                 </div>
                             </div>
                         </div>
-                    </pane>
-                    <pane title="Nội dung">
-                        <div class="margin-top-20">
+                    </div>
+                </div>
+            </div>
+            <!--/.col (column 2) -->
+            <!-- column 3-->
+            <div class="col-md-4">
+                <div class="box box-warning">
+                    <!-- /.box-header -->
+                    <div class="box-body">
+                        <div class="box-body">
                             <div class="form-group">
-                                <label for="inputPassword3" class="col-sm-2 control-label">Mô tả ngắn</label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control" name="description" ng-maxlength="500" ng-model="product.Description">
-                                    <span ng-show="frmAddProduct.description.$error.maxlength" class="has-error">Mô tả chỉ được 500 ký tự</span>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="inputPassword3" class="col-sm-2 control-label">Mô tả sản phẩm</label>
-                                <div class="col-sm-10">
-                                    <textarea class="form-control" name="content" ckeditor="ckeditorOptions" ng-model="product.Content"></textarea>
-                                </div>
-                            </div>
-                        </div>
-                    </pane>
-                    <pane title="Hỗ trợ SEO web">
-                        <div class="margin-top-20">
-                            <div class="form-group">
-                                <label for="inputPassword3" class="col-sm-2 control-label">Tiêu đề SEO</label>
-                                <div class="col-sm-10">
+                                <label for="inputPassword3" class="control-label">Tiêu đề SEO</label>
+                                <div>
                                     <input type="text" class="form-control" ng-maxlength="256" required name="alias" ng-model="product.Alias">
-                                    <label class="has-error" ng-show="frmAddProduct.alias.$invalid">Phải nhập tiêu đề SEO</label>
                                     <span ng-show="frmAddProduct.alias.$error.maxlength" class="has-error">Tiêu đề SEO chỉ được 256 ký tự</span>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="inputPassword3" class="col-sm-2 control-label">Meta Keyword</label>
-                                <div class="col-sm-10">
+                                <label for="inputPassword3" class="control-label">Meta Keyword</label>
+                                <div>
                                     <textarea class="form-control" name="metakeyword" ng-model="product.MetaKeyword"></textarea>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="inputPassword3" class="col-sm-2 control-label">Meta Description</label>
-                                <div class="col-sm-10">
+                                <label for="inputPassword3" class="control-label">Meta Description</label>
+                                <div>
                                     <textarea class="form-control" name="metadescription" ng-model="product.MetaDescription"></textarea>
                                 </div>
                             </div>
-                        </div>
-                    </pane>
-                    <pane title="Hình sản phẩm">
-                        <div class="margin-top-20">
                             <div class="form-group">
-                                <label for="inputPassword3" class="col-sm-2 control-label">Hình ảnh</label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control" name="image" ng-maxlength="256" ng-model="product.Image" />
-                                    <span ng-show="frmAddProduct.image.$error.maxlength" class="has-error">Hình ảnh chỉ được 256 ký tự</span>
+                                <label for="inputPassword3" class="control-label">Hình đại diện</label>
+                                <div>
+                                    <ul class="list-inline">
+                                        <li><img ng-src="{{product.Image}}" width="100" /></li>
+                                    </ul>
                                     <button class="btn btn-default" type="button" ng-click="ChooseImage()">Chọn ảnh</button>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="inputPassword3" class="col-sm-2 control-label">Thêm hình</label>
-                                <div class="col-sm-10">
+                                <label for="inputPassword3" class="control-label">Hình mô tả</label>
+                                <div>
                                     <ul class="list-inline">
                                         <li ng-repeat="img in moreImages"><img ng-src="{{img}}" width="100" /></li>
                                     </ul>
@@ -149,28 +152,27 @@
                                 </div>
                             </div>
                         </div>
-                    </pane>
-                    <pane title="Color & Size">
-                        <div class="margin-top-20">
-                            <div class="form-group">
-                                <label for="inputPassword3" class="col-sm-2 control-label">Color</label>
-                                <div class="col-sm-10">
-
-                                </div>
-                            </div>
-                        </div>
-                    </pane>
-                </tabs>
-                <!-- nav-tabs-custom -->
-                
+                    </div>
+                    <!-- /.box-body -->
+                </div>
+                <!-- /.box -->
             </div>
-            <!-- /.box-body -->
-            <div class="box-footer">
+            <!--/.col (column 3) -->
+        </div>
+        <!-- /.row -->
+        <div class="row">
+            <div class="col-md-12">
                 <button class="btn btn-default" ui-sref="products">Hủy</button>
                 <button type="submit" class="btn btn-success pull-right" ng-disabled="frmAddProduct.$invalid">Thêm mới</button>
             </div>
-            <!-- /.box-footer -->
-        </form>
-    </div>
+        </div>
+    </form>
 </section>
 <!-- /.content -->
+
+<script>
+    $(function () {
+        //Initialize Select2 Elements
+        $(".select2").select2();
+    });
+</script>

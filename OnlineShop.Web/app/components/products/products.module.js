@@ -1,7 +1,7 @@
 ﻿/// <reference path="/Assets/admin/libs/angular/angular.js" />
 
 (function () {
-    angular.module('Myshop.products', ['Myshop.common']).config(config);
+    angular.module('Myshop.products', ['Myshop.common', 'ui.select2']).config(config);
 
     config.$inject = ['$stateProvider', '$urlRouterProvider'];
 
@@ -9,7 +9,7 @@
         $stateProvider.state('products', {
             url: "/products",
             templateUrl: "app/components/products/productListView.html",
-            parent:'base',
+            parent: 'base',
             controller: "productListController"
         }).state('product_Add', {
             url: "/product_Add",
@@ -23,5 +23,4 @@
             controller: "productEditController"
         });
     }
-
 })();

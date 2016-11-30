@@ -22,6 +22,15 @@ namespace BabyShop.Model.Models
         [Column(Order = 3)]
         public int ColorID { set; get; }
 
+        [MaxLength(50)]
+        public string SizeName { set; get; }
+
+        [MaxLength(50)]
+        public string ColorName { set; get; }
+
+        [MaxLength(256)]
+        public string ProductName { set; get; }
+
         [ForeignKey("ProductID")]
         public virtual Product Product { set; get; }
 

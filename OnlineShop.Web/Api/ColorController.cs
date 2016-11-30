@@ -16,7 +16,7 @@ using System.Web.Script.Serialization;
 namespace BabyShop.Web.Api
 {
     [RoutePrefix("api/color")]
-    [Authorize]
+    //[Authorize]
     public class ColorController : ApiControllerBase
     {
         #region Initialize
@@ -31,10 +31,10 @@ namespace BabyShop.Web.Api
 
         #endregion Initialize
 
-        [Route("getall")]
+        [Route("getallpaging")]
         [HttpGet]
         [Authorize]
-        public HttpResponseMessage GetAll(HttpRequestMessage request, string keyword, int page, int pageSize = 20)
+        public HttpResponseMessage GetAllPaging(HttpRequestMessage request, string keyword, int page, int pageSize = 20)
         {
             return CreateHttpResponse(request, () =>
             {
@@ -54,6 +54,20 @@ namespace BabyShop.Web.Api
                 };
 
                 var response = request.CreateResponse(HttpStatusCode.OK, paginationSet);
+                return response;
+            });
+        }
+
+        [Route("getall")]
+        [HttpGet]
+        [Authorize]
+        public HttpResponseMessage GetAll(HttpRequestMessage request)
+        {
+            return CreateHttpResponse(request, () =>
+            {
+                var model = _colorService.GetAll().OrderByDescending(x => x.Name);
+                var responseData = Mapper.Map<IEnumerable<Color>, IEnumerable<ColorViewModel>>(model);
+                var response = request.CreateResponse(HttpStatusCode.OK, responseData);
                 return response;
             });
         }
@@ -165,7 +179,7 @@ namespace BabyShop.Web.Api
                     if (_colorService.GetAll().Where(x => x.ID != dbcolor.ID && x.Name == dbcolor.Name.Trim()).Count() > 0)
                     {
                         response = request.CreateResponse(HttpStatusCode.BadRequest);
-                        response.Content = new StringContent("Tên color đã tồn tại", Encoding.Unicode);
+                        response.Content = new StringContent("Tên màu sắc đã tồn tại", Encoding.Unicode);
                     }
                     else
                     {
